@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
- *main - print size
- *
- * Return : always 0 (success)
+ * main - main block
+ * Return: 0
  */
 int main(void)
 {
