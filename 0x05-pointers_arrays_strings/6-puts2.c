@@ -6,7 +6,7 @@
  * @str: string to print the chars from
  */
 void puts2(char *str)
-{int l;
+{int l, i;
 
 l = 0;
 while (str[l] != '\0')
