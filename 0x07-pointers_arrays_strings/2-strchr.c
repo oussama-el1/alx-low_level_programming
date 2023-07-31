@@ -12,24 +12,15 @@
 
 char *_strchr(char *s, char c)
 {
-int i, l, j, cpp;
+	while (*s)
+	{
+		if (*s != c)
+			s++;
+		else
+			return (s);
+	}
+	if (c == '\0')
+		return (s);
 
-l = 0;
-while (s[i] != '\0')
-{
-l++;
-}
-for (i = 0; i < l; i++)
-{
-if (s[i] == c)
-{
-j = i;
-cpp = 0;
-while (s[j] = '\0')
-{
-s[cpp] = s [j];
-}
-}
-return (s);
-}
+	return (NULL);
 }
