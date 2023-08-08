@@ -21,7 +21,7 @@ l++;
 j++;
 }
 }
-str = (char *) malloc(sizeof(char) * (l + ac));
+str = (char *) malloc(sizeof(char) * (l + ac + 1));
 if (str == NULL)
 {
 return (NULL);
