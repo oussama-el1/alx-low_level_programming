@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * malloc_cheched - allocation with malloc
+ * malloc_checked - allocation with malloc
  * @b: sizeoff allocation
  * Return: pointer
  */
