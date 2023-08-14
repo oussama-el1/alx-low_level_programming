@@ -18,8 +18,12 @@ new = malloc(sizeof(dog_t));
 if (new == NULL)
 return (NULL);
 new->name = malloc(sizeof(char) * (strlen(name) + 1));
+if (new->name == NULL)
+return (NULL);
 strcpy(new->name, name);
 new->owner = malloc(sizeof(char) * (strlen(owner) + 1));
+if (new->owner == NULL)
+return (NULL);
 strcpy(new->owner, owner);
 new->age = age;
 
