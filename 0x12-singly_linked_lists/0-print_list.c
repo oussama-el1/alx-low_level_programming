@@ -21,7 +21,7 @@ cor = h;
 		if (cor->str == NULL)
 			printf("[0] (nil)\n");
 		else
-			printf("[%d] %s\n", cor->len, cor->str);
+			printf("[%u] %s\n", cor->len, cor->str);
 		i++;
 		cor = cor->next;
 	}
