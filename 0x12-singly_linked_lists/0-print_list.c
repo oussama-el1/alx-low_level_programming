@@ -10,11 +10,7 @@ size_t print_list(const list_t *h)
 {
 size_t i = 0;
 const list_t *cor;
-	if (h == NULL)
-	{
-		printf("vide list");
-		exit(1);
-	}
+
 cor = h;
 	while (cor != NULL)
 	{
