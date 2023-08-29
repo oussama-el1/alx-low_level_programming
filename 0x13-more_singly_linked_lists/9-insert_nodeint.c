@@ -38,14 +38,15 @@ return (NULL);
 
 cour = *head;
 
-for (i = 0; cour && i < (idx - 1); i++)
+for (i = 0; cour && i < idx; i++)
 {
-cour = cour->next;
-}
 if (i == idx - 1)
 {new->next = cour->next;
-cour->next = new;
-return (new);
+	cour->next = new;
+	return (new);
+}
+else
+cour = cour->next;
 }
 return (NULL);
 }
