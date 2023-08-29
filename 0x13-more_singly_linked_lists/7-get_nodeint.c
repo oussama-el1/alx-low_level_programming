@@ -20,7 +20,6 @@ i++;
 temp = temp->next;
 }
 
-free(temp);
 
 if (head == NULL || index > i)
 {
