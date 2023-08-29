@@ -18,11 +18,6 @@ new = (listint_t *)malloc(sizeof(listint_t));
 new->n = n;
 new->next = NULL;
 
-while (cour->next != NULL)
-{
-len++;
-cour = cour->next;
-}
 if (!head || !new)
 {
 return (NULL);
@@ -36,12 +31,11 @@ return (NULL);
 		return (new);
 	}
 
-cour = *head;
-
 for (i = 0; cour && i < idx; i++)
 {
 if (i == idx - 1)
-{new->next = cour->next;
+{
+	new->next = cour->next;
 	cour->next = new;
 	return (new);
 }
