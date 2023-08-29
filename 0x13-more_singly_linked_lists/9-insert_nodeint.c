@@ -15,13 +15,14 @@ listint_t *new;
 unsigned int i;
 
 new = (listint_t *)malloc(sizeof(listint_t));
-new->n = n;
-new->next = NULL;
+
 
 if (!head || !new)
 {
 return (NULL);
 }
+new->n = n;
+new->next = NULL;
 
 	if (idx == 0)
 	{
