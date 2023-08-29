@@ -16,13 +16,14 @@ unsigned int i, len = 0;
 
 new = (listint_t *)malloc(sizeof(listint_t));
 new->n = n;
+new->next = NULL;
 
 while (cour->next != NULL)
 {
 len++;
 cour = cour->next;
 }
-if (*head == NULL || idx > len)
+if (!head || !new)
 {
 return (NULL);
 }
@@ -37,12 +38,13 @@ return (NULL);
 
 cour = *head;
 
-for (i = 0; i < (idx - 1); i++)
+for (i = 0; cour && i < (idx - 1); i++)
 {
 cour = cour->next;
 }
-new->next = cour->next;
+if (i == idx - 1)
+{new->next = cour->next;
 cour->next = new;
-
 return (new);
 }
+return (NULL);
