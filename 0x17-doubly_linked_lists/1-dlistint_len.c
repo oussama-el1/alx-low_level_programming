@@ -2,7 +2,7 @@
 
 /**
  * dlistint_len - returns the number
- * @h: head of the 
+ * @h: head of the
  * Return: tr of nodes
  */
 size_t dlistint_len(const dlistint_t *h)
